@@ -64,7 +64,6 @@ class AccountResourceTest {
   @Order(3)
   void testCreateAccount() {
     Account newAccount = new Account(324324L, 112244L, "Sandy Holmes", new BigDecimal("154.55"));
-
     Account returnedAccount =
         given()
           .contentType(ContentType.JSON)
